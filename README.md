@@ -1,4 +1,11 @@
-![Kubernetes Logo](https://raw.githubusercontent.com/kubernetes-sigs/kubespray/master/docs/img/kubernetes-logo.png)
+Before Doing this 1st setup a private registry using docker-distribution and push all the respective images which is required for kubernetes. clone and then please check the location "roles/download/defaults/main.yml" ... please check the "main.yml.multi-setup" for refernce.
+Kindly replace the registry.devops.xxx.local with your own private registry. 
+
+One more you may face a slight issue while bringing up the core-dns pod if it fails please deploy the playbook as per the no of master nodes you have {like for 3 master you need 3 core-dns/kube-dns pods}.
+
+
+
+[Kubernetes Logo](https://raw.githubusercontent.com/kubernetes-sigs/kubespray/master/docs/img/kubernetes-logo.png)
 
 Deploy a Production Ready Kubernetes Cluster
 ============================================
